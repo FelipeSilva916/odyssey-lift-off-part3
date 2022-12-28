@@ -12,12 +12,6 @@ const resolvers = {
   Track: {
     author: ({ authorId }, _, { dataSources }) => {
       return dataSources.trackAPI.getAuthor(authorId);
-<<<<<<< Updated upstream
-    },
-    modules: ({ id }, _, { dataSources }) => {
-      return dataSources.trackAPI.getTrackModules(id);
-=======
->>>>>>> Stashed changes
     }
   }
 };
