@@ -20,14 +20,14 @@ const typeDefs = gql`
     length: Int
     "The number of modules this track contains"
     modulesCount: Int
-    "The track's complete description, can be in Markdown format"
+    "the track's complete description, can be in markdown format"
     description: String
     "The number of times a track has been viewed"
     numberOfViews: Int
-    "The track's complete Modules"
     modules: [Module!]!
   }
 
+  "A Module is a single unit of teaching. Multiple Modules compose a Track"
   type Module {
     id: ID!
     "The module's title"
